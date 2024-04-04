@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">    
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Kalkulator BMI</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <h3 style="text-align: justify;">Kalkulator BMI</h3>
+            <p style="font-size: 19px; text-align: justify;" >Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu?
+            </p>
+            <p style="font-size: 24px;">Yuk, hitung sekarang di Kalkulator BMI</p>
+            <h2>Hitung BMI kamu</h2>
+            <form id="bmiForm">
+                <div class="input-container">
+                    <label>Gender:</label>
+                    <label for="male" style="cursor: pointer; display: inline-block;"> <!-- Tambahkan label untuk radio button "Male" -->
+                        <input type="radio" id="male" name="gender" value="male" required> 
+                        <span style="display: inline-block; vertical-align: middle;">Male</span> <!-- Gunakan <span> untuk menjaga teks "Male" berada pada posisi sejajar -->
+                    </label>
+                    <label for="female" style="cursor: pointer; display: inline-block;"> <!-- Tambahkan label untuk radio button "Female" -->
+                        <input type="radio" id="female" name="gender" value="female" required>
+                        <span style="display: inline-block; vertical-align: middle;">Female</span> <!-- Gunakan <span> untuk menjaga teks "Female" berada pada posisi sejajar -->
+                    </label>
+                </div>
+                <div class="input-container">
+                    <label for="berat">Berat Badan (kg):</label>
+                    <input type="number" id="berat" name="berat" required>
+                </div>
+                <div class="input-container">
+                    <label for="usia">Usia (tahun):</label>
+                    <input type="number" id="usia" name="usia" required>
+                </div>
+                <div class="input-container">
+                    <label for="tinggi">Tinggi Badan (cm):</label>
+                    <input type="number" id="tinggi" name="tinggi" required>
+                </div>
+                <span>
+                    <input type="submit" value="Hitung BMI">
+                    <button class="reset" onclick="resetForm()">Reset</button>
+                </span>
+            </form>
+        </div>
+        <div class="result-container">
+            <h2>Result</h2>
+            <div class="result" id="result"></div>
+            <button class="download-button" onclick="downloadResult()">Download Hasil BMI</button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 BMI Calculator. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./js/script.js"></script>
+</body>
+</html>

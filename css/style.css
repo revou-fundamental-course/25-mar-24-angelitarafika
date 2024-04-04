@@ -1,0 +1,129 @@
+    /* CSS styling */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header, footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-image: linear-gradient(500deg, red, blue);
+        padding: 20px; /* Tambahkan padding jika diperlukan */
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        width: 90%;
+        max-width: 600px;
+        margin: 0 auto; /* Pusatkan container */
+    }
+    
+    .input-container {
+        margin-bottom: 20px;
+    }
+    
+    .input-container label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .input-container input[type="number"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-sizing: border-box;
+    }
+    
+    .result-container {
+        margin-top: 20px; /* Berikan margin atas jika diperlukan */
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+        width: 90%;
+        max-width: 600px;
+        margin: 0 auto; /* Pusatkan container */
+    }
+    
+    .result-container h2 {
+        text-align: center;
+    }
+    
+    .result {
+        margin-top: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        background-color: #fff;
+        text-align: center;
+    }
+    
+    input[type="submit"] {
+        background-color: #007bff; /* Warna latar belakang */
+        border: none;
+        color: white; /* Warna teks */
+        padding: 10px 20px; /* Padding atas dan bawah 10px, kiri dan kanan 20px */
+        text-align: center; /* Teks berada di tengah tombol */
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px; /* Ukuran font */
+        margin-top: 10px; /* Jarak antara tombol dengan konten sebelumnya */
+        cursor: pointer; /* Tampilan cursor saat mengarahkan ke tombol */
+        border-radius: 5px; 
+    }
+
+    input[type="submit"]:hover {
+        background-color: #3c5875; /* Warna latar belakang saat tombol dihover */
+    }
+    
+    .reset {
+        background-color: #e41620; /* Warna latar belakang */
+        border: none;
+        color: white; /* Warna teks */
+        padding: 10px 20px; /* Padding atas dan bawah 10px, kiri dan kanan 20px */
+        text-align: center; /* Teks berada di tengah tombol */
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px; /* Ukuran font */
+        margin-top: 10px; /* Jarak antara tombol dengan konten sebelumnya */
+        cursor: pointer; /* Tampilan cursor saat mengarahkan ke tombol */
+        border-radius: 5px; 
+    }
+
+    .reset:hover {
+        background-color: #7a3639; /* Warna latar belakang saat tombol dihover */
+    }
+
+    .download-button{
+        background-color: #007bff; /* Warna latar belakang */
+        border: none;
+        color: white; /* Warna teks */
+        padding: 10px 20px; /* Padding atas dan bawah 10px, kiri dan kanan 20px */
+        text-align: center; /* Teks berada di tengah tombol */
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px; /* Ukuran font */
+        margin-top: 10px; /* Jarak antara tombol dengan konten sebelumnya */
+        cursor: pointer; /* Tampilan cursor saat mengarahkan ke tombol */
+        border-radius: 5px; 
+    }
+
+    .download-button:hover {
+        background-color: #3c5875; /* Warna latar belakang saat tombol dihover */
+    }
